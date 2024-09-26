@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float speed;
+    public float runMultiplier;
     public float jumpSpeed;
 
     private CharacterController characterController;
@@ -19,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
     {
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
+        float runInput = Input.GetAxis("Run");
 
         Vector3 movementDirection = transform.forward * verticalInput + transform.right * horizontalInput;
 
@@ -37,6 +39,11 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             ySpeed += Physics.gravity.y * Time.deltaTime * 2;
+        }
+
+        if (runInput > 0)
+        {
+            magnitude = magnitude * runMultiplier;
         }
 
         Vector3 velocity = movementDirection * magnitude;

@@ -6,17 +6,17 @@ using UnityEngine.Events;
 
 public class Health : MonoBehaviour
 {
-    [SerializeField] public int health;
+    public int health;
 
     [SerializeField] private UnityEvent onDamage;
     [SerializeField] private UnityEvent onHeal;
     [SerializeField] private UnityEvent onDie;
-    [SerializeField] private HealthChangeEvent onChange;
+    [SerializeField] private UnityEvent onChange;
 
     public void ModifyHealth(int deltaHealth)
     {
         health += deltaHealth;
-        onChange?.Invoke(health);
+        onChange?.Invoke();
 
         if (deltaHealth < 0)
         {
@@ -33,15 +33,4 @@ public class Health : MonoBehaviour
             onDie?.Invoke();
         }
     }
-
-    internal void SetHealth(int health)
-    {
-        this.health = health;
-    }
-
-    [Serializable]
-    public class HealthChangeEvent : UnityEvent<int>
-    {
-    }
-
 }

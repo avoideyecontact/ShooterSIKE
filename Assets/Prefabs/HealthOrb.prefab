@@ -397,10 +397,10 @@ MonoBehaviour:
       - m_Target: {fileID: 5451755277773991020}
         m_TargetAssemblyTypeName: HealthModifier, Assembly-CSharp
         m_MethodName: Apply
-        m_Mode: 2
+        m_Mode: 0
         m_Arguments:
-          m_ObjectArgument: {fileID: 1236990917462025955, guid: 721d9af56204015418dc39a027959396, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

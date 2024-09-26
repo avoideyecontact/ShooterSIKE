@@ -5,9 +5,10 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [SerializeField] private GameObject weapon;
-    [SerializeField] private Transform gunPosition;
+    [SerializeField] private Transform weaponPosition;
 
     private bool armed = false;
+    private Gun gun;
 
     private void Start()
     {
@@ -17,9 +18,19 @@ public class Player : MonoBehaviour
         }
     }
 
+    void Update()
+    {
+        Debug.Log(gun);
+        if (Input.GetAxis("Fire") > 0 && gun != null)
+        {
+            gun.Fire();
+        }
+    }
+
     public void ArmPlayer(GameObject weapon)
     {
-        Instantiate(weapon, gunPosition);
+        weapon = Instantiate(weapon, weaponPosition);
+        gun = weapon.GetComponent<Gun>();
         armed = true;
     }
 }

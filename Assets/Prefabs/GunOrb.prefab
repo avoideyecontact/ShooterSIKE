@@ -36,7 +36,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 6094909473739280841}
+  - {fileID: 1996398190928578511}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8337483654149344484
@@ -142,24 +142,24 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 978124657757511084}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+        m_TargetAssemblyTypeName: ArmPlayer, Assembly-CSharp
+        m_MethodName: Arm
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 4586281886802207583}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 0
+        m_TargetAssemblyTypeName: DestroyObject, Assembly-CSharp
+        m_MethodName: Destroy
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -177,7 +177,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6884c5f8a31957d49abef2a68a2cf795, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weapon: {fileID: 6134910620227425013, guid: 3129e050d56aace47897e72ef7739fbc, type: 3}
+  weapon: {fileID: 5602260458452872006}
 --- !u!114 &4586281886802207583
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -191,7 +191,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToDestroy: {fileID: 6478192624595720391}
---- !u!1001 &6322342269513035701
+--- !u!1001 &1773484218091944371
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -248,8 +248,13 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3129e050d56aace47897e72ef7739fbc, type: 3}
---- !u!4 &6094909473739280841 stripped
+--- !u!4 &1996398190928578511 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 227448358860914300, guid: 3129e050d56aace47897e72ef7739fbc, type: 3}
-  m_PrefabInstance: {fileID: 6322342269513035701}
+  m_PrefabInstance: {fileID: 1773484218091944371}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5602260458452872006 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6134910620227425013, guid: 3129e050d56aace47897e72ef7739fbc, type: 3}
+  m_PrefabInstance: {fileID: 1773484218091944371}
   m_PrefabAsset: {fileID: 0}

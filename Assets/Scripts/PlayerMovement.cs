@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     public float speed;
     public float runMultiplier;
     public float jumpSpeed;
+    public Transform orientation;
 
     private CharacterController characterController;
     private float ySpeed;
@@ -22,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
         float verticalInput = Input.GetAxis("Vertical");
         float runInput = Input.GetAxis("Run");
 
-        Vector3 movementDirection = transform.forward * verticalInput + transform.right * horizontalInput;
+        Vector3 movementDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
 
         float magnitude = Mathf.Clamp01(movementDirection.magnitude) * speed;
         movementDirection.Normalize();

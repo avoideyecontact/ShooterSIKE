@@ -1,16 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerCam : MonoBehaviour
 {
     public float sensX;
     public float sensY;
-
     public Transform playerOrientation;
+    public bool locked = false;
 
-    float xRotation;
-    float yRotation;
+    private float xRotation;
+    private float yRotation;
 
     void Start()
     {
@@ -20,6 +18,9 @@ public class PlayerCam : MonoBehaviour
 
     void Update()
     {
+        if (locked)
+            return;
+
         float mouseX = Input.GetAxisRaw("Mouse X") * sensX;
         float mouseY = Input.GetAxisRaw("Mouse Y") * sensY;
 
@@ -36,5 +37,10 @@ public class PlayerCam : MonoBehaviour
     {
         sensX = sens;
         sensY = sens;
+    }
+
+    public void ToggleLock()
+    {
+        locked = !locked;
     }
 }

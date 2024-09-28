@@ -20,7 +20,6 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(gun);
         if (Input.GetAxis("Fire") > 0 && gun != null)
         {
             gun.Fire();

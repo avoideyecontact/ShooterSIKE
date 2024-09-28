@@ -11,11 +11,13 @@ public class Gun : MonoBehaviour
 
     public GameObject bulletPrefab;
 
+    [SerializeField] private Transform gunBarrelPosition;
+
     public void Fire()
     {
         if (fireAllowed)
         {
-            var bullet = Instantiate(bulletPrefab, transform.position, transform.parent.rotation);
+            var bullet = Instantiate(bulletPrefab, gunBarrelPosition.position, transform.parent.rotation);
             bullet.GetComponent<Rigidbody>();
             bullet.GetComponent<Rigidbody>().AddForce(transform.forward * firePower, ForceMode.Impulse);
             Destroy(bullet, bulletLifespan);

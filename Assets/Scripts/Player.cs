@@ -9,9 +9,12 @@ public class Player : MonoBehaviour
 
     private bool armed = false;
     private Gun gun;
+    private RaycastInteraction raycast;
 
     private void Start()
     {
+        raycast = GetComponent<RaycastInteraction>();
+
         if (weapon != null)
         {
             ArmPlayer(weapon);
@@ -26,9 +29,9 @@ public class Player : MonoBehaviour
         }
 
 
-        if (Input.GetButtonUp("Fire2"))
+        if (Input.GetButtonUp("Interaction"))
         {
-
+            raycast.Raycast();
         }
 
     }

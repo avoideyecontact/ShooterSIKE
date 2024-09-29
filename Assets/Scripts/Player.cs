@@ -24,6 +24,13 @@ public class Player : MonoBehaviour
         {
             gun.Fire();
         }
+
+
+        if (Input.GetButtonUp("Fire2"))
+        {
+
+        }
+
     }
 
     public void ArmPlayer(GameObject weapon)

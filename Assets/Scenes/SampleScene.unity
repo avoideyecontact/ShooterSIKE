@@ -952,6 +952,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 724842269}
   m_CullTransparentMesh: 1
+--- !u!1001 &755772104
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5558718359872436426, guid: b3f35a8378923104e9b7c50bfffb10d7, type: 3}
+      propertyPath: m_Name
+      value: ScoreOrb
+      objectReference: {fileID: 0}
+    - target: {fileID: 6763769619898949115, guid: b3f35a8378923104e9b7c50bfffb10d7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6763769619898949115, guid: b3f35a8378923104e9b7c50bfffb10d7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6763769619898949115, guid: b3f35a8378923104e9b7c50bfffb10d7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6763769619898949115, guid: b3f35a8378923104e9b7c50bfffb10d7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6763769619898949115, guid: b3f35a8378923104e9b7c50bfffb10d7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6763769619898949115, guid: b3f35a8378923104e9b7c50bfffb10d7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6763769619898949115, guid: b3f35a8378923104e9b7c50bfffb10d7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6763769619898949115, guid: b3f35a8378923104e9b7c50bfffb10d7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6763769619898949115, guid: b3f35a8378923104e9b7c50bfffb10d7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6763769619898949115, guid: b3f35a8378923104e9b7c50bfffb10d7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b3f35a8378923104e9b7c50bfffb10d7, type: 3}
 --- !u!1 &839485134
 GameObject:
   m_ObjectHideFlags: 0
@@ -2474,6 +2531,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d414a9c7483d44f4f96bac4e8d45b4b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 10
+  doorRotation: 90
   open: 0
   edgePivotPoint: {fileID: 1004722274}
 --- !u!1 &1834627907
@@ -2626,6 +2685,7 @@ GameObject:
   - component: {fileID: 1889951101}
   - component: {fileID: 1889951096}
   - component: {fileID: 1889951095}
+  - component: {fileID: 1889951103}
   - component: {fileID: 1889951102}
   m_Layer: 0
   m_Name: Player
@@ -2829,8 +2889,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de0fb0ee40da8042a6e44ed74453639, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionDistance: 2
+  interactionDistance: 3
   cameraTransform: {fileID: 963194228}
+--- !u!114 &1889951103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889951090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c97f782907c4dfc4c91ab7d089c43df6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 0
+  onScoreMinus:
+    m_PersistentCalls:
+      m_Calls: []
+  onScorePlus:
+    m_PersistentCalls:
+      m_Calls: []
+  onChange:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1335769670}
+        m_TargetAssemblyTypeName: UserInterfaceHandler, Assembly-CSharp
+        m_MethodName: UpdateUI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1915749126
 GameObject:
   m_ObjectHideFlags: 0
@@ -3897,3 +3991,4 @@ SceneRoots:
   - {fileID: 4599760963636758798}
   - {fileID: 332577757}
   - {fileID: 1780246939}
+  - {fileID: 755772104}

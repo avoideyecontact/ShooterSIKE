@@ -9,6 +9,9 @@ public class ArmPlayer : MonoBehaviour
     public void Arm(GameObject targer)
     {
         var player = targer.GetComponent<Player>();
-        player.ArmPlayer(weapon);
+        if (!player.armed)
+        {
+            player.ArmPlayer(weapon);
+        }
     }
 }

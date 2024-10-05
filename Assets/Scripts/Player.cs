@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
     [SerializeField] private GameObject weapon;
     [SerializeField] private Transform weaponPosition;
 
-    private bool armed = false;
+    public bool armed { get; private set; }
     private Gun gun;
     private RaycastInteraction raycast;
 

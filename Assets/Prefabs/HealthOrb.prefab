@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5767373618421340337}
   - component: {fileID: 3101138997477902586}
   - component: {fileID: 5315001375267063566}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cross (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 8060711124269631537}
   - component: {fileID: 7300525801858379275}
   - component: {fileID: 8160051592940039590}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cross
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 657059390292305040}
   - component: {fileID: 1129789933693828853}
   - component: {fileID: 1118078470287397557}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cross (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -265,7 +265,7 @@ GameObject:
   - component: {fileID: 6600719113054587183}
   - component: {fileID: 5451755277773991020}
   - component: {fileID: 6214486651249145911}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: HealthOrb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -280,7 +280,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5558718359872436426}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4, y: 1, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -455,7 +455,7 @@ GameObject:
   - component: {fileID: 1344686866555016504}
   - component: {fileID: 7177879108696205737}
   - component: {fileID: 3077642471807035198}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cross (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -538,7 +538,7 @@ GameObject:
   - component: {fileID: 3119543792874488019}
   - component: {fileID: 4531688608746331938}
   - component: {fileID: 6985490664564948970}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}

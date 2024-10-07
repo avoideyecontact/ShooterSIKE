@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
+using UnityEngine.SocialPlatforms;
 
 public class PauseHandler : MonoBehaviour
 {
@@ -38,20 +39,29 @@ public class PauseHandler : MonoBehaviour
 
     public void Pause()
     {
-        Time.timeScale = 0f;
-        Paused = true;
-        Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.None;
+        TimeStop();
         canvasObj.SetActive(true);
     }
 
     public void Resume()
     {
+        TimeResume();
+        canvasObj.SetActive(false);
+    }
+
+    public void TimeStop()
+    {
+        Time.timeScale = 0f;
+        Paused = true;
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+    }
+    public void TimeResume()
+    {
         Time.timeScale = 1f;
         Paused = false;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
-        canvasObj.SetActive(false);
         EventSystem.current.SetSelectedGameObject(null, null);
     }
 }

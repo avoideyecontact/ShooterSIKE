@@ -25,7 +25,7 @@ public class Player : MonoBehaviour
     {
         if (Input.GetAxis("Fire") > 0 && gun != null)
         {
-            gun.Fire();
+            gun.Use();
         }
 
 

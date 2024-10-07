@@ -10,6 +10,8 @@ public class EnemyAI : MonoBehaviour
 
     public Transform player;
 
+    public GameObject weaponObject;
+
     public LayerMask whatIsGround;
     public LayerMask whatIsPlayer;
 
@@ -28,13 +30,15 @@ public class EnemyAI : MonoBehaviour
     public GameObject bulletPrefab;
     public float bulletLifespan;
 
+    private Weapon weapon;
     private bool playerInSightRange;
     private bool playerInAttackRange;
 
-    private void Awake()
+    private void Start()
     {
         player = GameObject.Find("Player").transform;
         agent = GetComponent<NavMeshAgent>();
+        weapon = weaponObject.GetComponent<Weapon>();
     }
 
     private void Update()
@@ -81,14 +85,11 @@ public class EnemyAI : MonoBehaviour
         agent.SetDestination(transform.position);
 
         transform.LookAt(player);
+        weaponObject.transform.LookAt(player);
 
         if (!alredyAttacked)
         {
-            // Attack codevar
-            var bullet = Instantiate(bulletPrefab, transform.position, transform.rotation);
-            bullet.GetComponent<Rigidbody>();
-            bullet.GetComponent<Rigidbody>().AddForce(transform.forward * 5, ForceMode.Impulse);
-            Destroy(bullet, bulletLifespan);
+            weapon.Use();
 
             alredyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);

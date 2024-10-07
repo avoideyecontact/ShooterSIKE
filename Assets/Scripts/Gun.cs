@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Gun : MonoBehaviour
+public class Gun : MonoBehaviour, Weapon
 {
     public float fireRate;
     public float firePower;
@@ -13,7 +13,7 @@ public class Gun : MonoBehaviour
 
     [SerializeField] private Transform gunBarrelPosition;
 
-    public void Fire()
+    public void Use()
     {
         if (fireAllowed)
         {

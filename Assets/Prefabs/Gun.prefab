@@ -245,11 +245,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cd91a9ce4fc58b488565f340dc31984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireRate: 0.005
+  fireRate: 0.1
   firePower: 20
   fireAllowed: 1
   bulletLifespan: 5
-  bulletPrefab: {fileID: 2093271020451803572, guid: 4339342476447b54b989978064fc16ed, type: 3}
+  bulletPrefab: {fileID: 2093271020451803572, guid: b07be196615cb024394f5464fdb3c9ed, type: 3}
   gunBarrelPosition: {fileID: 3765657617908609781}
 --- !u!1 &8466324987666188666
 GameObject:

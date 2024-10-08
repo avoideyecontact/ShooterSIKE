@@ -1,4 +1,4 @@
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
 
 public class UserInterfaceHandler : MonoBehaviour
@@ -19,7 +19,7 @@ public class UserInterfaceHandler : MonoBehaviour
 
     public void UpdateUI()
     {
-        healthText.SetText($"{healthComponent.health}");
-        scoreText.SetText($"{scoreComponent.score}");
+        healthText.SetText($"{healthComponent.health}+");
+        scoreText.SetText($"{scoreComponent.score}₪");
     }
 }

@@ -6,6 +6,7 @@ public class Player : MonoBehaviour
 {
     [SerializeField] private GameObject weapon;
     [SerializeField] private Transform weaponPosition;
+    [SerializeField] private Transform cameraTransform;
 
     public bool armed { get; private set; }
     private Gun gun;
@@ -23,6 +24,15 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        if (armed)
+        {
+            RaycastHit hit;
+            if (Physics.Raycast(cameraTransform.position, cameraTransform.forward, out hit, Mathf.Infinity))
+            {
+                gun.transform.LookAt(hit.point);
+            }
+        }
+
         if (Input.GetAxis("Fire") > 0 && gun != null)
         {
             gun.Use();

@@ -11,6 +11,9 @@ public class EnemyAI : MonoBehaviour
     // Слой орудия бота
     public GameObject weaponObject;
 
+    // Частицы смерти ботов
+    public GameObject deathParticles;
+
     // Слой поверхностей по которым ходят боты
     public LayerMask whatIsGround;
     // Слой с игроком
@@ -118,6 +121,7 @@ public class EnemyAI : MonoBehaviour
     {
         var score = player.GetComponent<Score>();
         score.ModifyScore(1);
-        // spawner добавить
+        var particles = Instantiate(deathParticles, transform.position, Quaternion.identity);
+        Destroy(particles, 5.0f);
     }
 }

@@ -255,6 +255,7 @@ MonoBehaviour:
   agent: {fileID: 2873344661370658399}
   player: {fileID: 0}
   weaponObject: {fileID: 8965254412738647317}
+  deathParticles: {fileID: 2847147642266919234, guid: 8b7bbc824d9820b419a83dad45c23d5e, type: 3}
   whatIsGround:
     serializedVersion: 2
     m_Bits: 257

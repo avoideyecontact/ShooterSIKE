@@ -1,11 +1,10 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
+// Класс реализующий здоровье у объекта
 public class Health : MonoBehaviour
 {
+    // Величина здоровья
     public int health;
 
     [SerializeField] private UnityEvent onDamage;
@@ -13,6 +12,7 @@ public class Health : MonoBehaviour
     [SerializeField] private UnityEvent onDie;
     [SerializeField] private UnityEvent onChange;
 
+    // Функция для изменения здоровья
     public void ModifyHealth(int deltaHealth)
     {
         health += deltaHealth;

@@ -1,8 +1,10 @@
 using UnityEngine;
 
+// Выход из игры
 public class QuitGame : MonoBehaviour
 {
-    public KeyCode quitKey = KeyCode.Escape;
+    // Кнопка выхода из игры
+    public KeyCode quitKey;
 
     void Update()
     {
@@ -10,6 +12,7 @@ public class QuitGame : MonoBehaviour
             Quit();
     }
 
+    // Функция выхода из игры (в зависимости от того где запущена игра)
     public void Quit()
     {
 #if UNITY_EDITOR

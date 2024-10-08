@@ -1,18 +1,24 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
+// Класс описывающий стреляющий пистолет
 public class Gun : MonoBehaviour, Weapon
 {
+    // Темп стрельбы
     public float fireRate;
+    // Сила выстрела
     public float firePower;
+    // Разрешен выстрел или нет
     public bool fireAllowed;
+    // Время жизни пули
     public float bulletLifespan = 5;
 
+    // Префаб пули
     public GameObject bulletPrefab;
 
     [SerializeField] private Transform gunBarrelPosition;
 
+    // Использовать оружие (произвести выстрел)
     public void Use()
     {
         if (fireAllowed)

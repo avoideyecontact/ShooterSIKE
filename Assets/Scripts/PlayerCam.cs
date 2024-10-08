@@ -2,9 +2,13 @@ using UnityEngine;
 
 public class PlayerCam : MonoBehaviour
 {
+    // Чувствительность мыши по X
     public float sensX;
+    // Чувствительность мыши по Y
     public float sensY;
+    // Куда смотрит игрок
     public Transform playerOrientation;
+    // Блокировка взгляда персонажа
     public bool locked = false;
 
     private float xRotation;
@@ -33,12 +37,14 @@ public class PlayerCam : MonoBehaviour
         playerOrientation.rotation = Quaternion.Euler(0, yRotation, 0);
     }
 
+    // Установка чувствительности игры
     public void SetSensetivity(float sens)
     {
         sensX = sens;
         sensY = sens;
     }
 
+    // Переключение блокировки взгляда
     public void ToggleLock()
     {
         locked = !locked;

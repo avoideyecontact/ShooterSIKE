@@ -1,11 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
+// Движение орбов для красоты
 public class OrbMovement : MonoBehaviour
 {
+    // Скорость вращения орбов
     public float rotationSpeed = 50f;
+    // Аплитуда движения орбов (вверх - вниз)
     public float amplitude = 0.3f;
+    // Частота движения орбов (вверх - вниз)
     public float frequency = 2f;
 
     private Vector3 initialPosition;

@@ -1,16 +1,17 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
+// Очки персонажа
 public class Score : MonoBehaviour
 {
+    // Очки персонажа
     public int score;
 
     [SerializeField] private UnityEvent onScoreMinus;
     [SerializeField] private UnityEvent onScorePlus;
     [SerializeField] private UnityEvent onChange;
 
+    // Изменение очков персонажа
     public void ModifyScore(int deltaScore)
     {
         score += deltaScore;

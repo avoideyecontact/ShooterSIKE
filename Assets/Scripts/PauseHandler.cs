@@ -1,12 +1,15 @@
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
-using UnityEngine.SocialPlatforms;
 
+// Класс отвечающий за паузу в игре
 public class PauseHandler : MonoBehaviour
 {
+    // Кнопка на которую переключается пауза
     public KeyCode pauseKey;
-    public bool Paused { get; private set; } = false;
+
+    // Игра на паузе или нет
+    public bool Paused { get; private set; }
 
     [SerializeField] private GameObject canvasObj;
     [SerializeField] private UnityEvent _action;
@@ -23,6 +26,7 @@ public class PauseHandler : MonoBehaviour
             SwitchPause();
     }
 
+    // Переключение паузы
     public void SwitchPause()
     {
         if (Paused)
@@ -37,18 +41,21 @@ public class PauseHandler : MonoBehaviour
         _action?.Invoke();
     }
 
+    // Поставить игру на паузу
     public void Pause()
     {
         TimeStop();
         canvasObj.SetActive(true);
     }
 
+    // Снять игру с паузы
     public void Resume()
     {
         TimeResume();
         canvasObj.SetActive(false);
     }
 
+    // Остановка времени игры
     public void TimeStop()
     {
         Time.timeScale = 0f;
@@ -56,6 +63,8 @@ public class PauseHandler : MonoBehaviour
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
     }
+
+    // Возобновить течение времени игры
     public void TimeResume()
     {
         Time.timeScale = 1f;

@@ -1,35 +1,40 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
 using UnityEngine;
 using UnityEngine.AI;
 
+// Класс поведение ботов
 public class EnemyAI : MonoBehaviour
 {
+    // NavMeshAgent
     public NavMeshAgent agent;
-
+    // Трансформ игрока
     public Transform player;
-
+    // Слой орудия бота
     public GameObject weaponObject;
 
+    // Слой поверхностей по которым ходят боты
     public LayerMask whatIsGround;
+    // Слой с игроком
     public LayerMask whatIsPlayer;
 
     [Space]
     [Header("Patroling")]
+    // Точка интереса до которой идет бот
     public Vector3 walkPoint;
+    // Установлена точка интереса или нет
     public bool walkPointSet;
+    // Дистанция на которую может отойти бот при выборе точки
     public float walkPointRange;
 
     [Space]
     [Header("Attacking")]
+    // Радиус видения бота
     public float sightRange;
+    // Радиус атаки бота
     public float attackRange;
+    // Кулдаун между атаками
     public float timeBetweenAttacks;
-    bool alredyAttacked;
-    public GameObject bulletPrefab;
-    public float bulletLifespan;
 
+    bool alredyAttacked;
     private Weapon weapon;
     private bool playerInSightRange;
     private bool playerInAttackRange;

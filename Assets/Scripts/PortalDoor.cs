@@ -1,9 +1,11 @@
 using UnityEngine;
 
+// Портальная дверь
 public class PortalDoor : MonoBehaviour
 {
     [SerializeField] private Transform destination;
 
+    // Телепортирование объекта
     public void Teleport(GameObject target)
     {
         if (destination == null)

@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.Events;
 
+// Класс который запускает событие при заходе в триггер
 public class EnterTrigger : MonoBehaviour
 {
     [SerializeField] private new string tag;
@@ -15,6 +16,7 @@ public class EnterTrigger : MonoBehaviour
         }
     }
 
+    // Расширение unity event (без него нельзя было бы вызвать делегат у другого объекта)
     [Serializable]
     public class EnterEvent : UnityEvent<GameObject>
     {

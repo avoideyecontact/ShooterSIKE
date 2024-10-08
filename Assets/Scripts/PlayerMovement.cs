@@ -1,12 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
+// Движение персонажа
 public class PlayerMovement : MonoBehaviour
 {
+    // Скорость движения
     public float speed;
+    // Множитель скорости при беге
     public float runMultiplier;
+    // Сила прыжка
     public float jumpSpeed;
+    // Направление игрока (куда смотрит)
     public Transform orientation;
 
     private CharacterController characterController;

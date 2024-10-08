@@ -1,13 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
+// Класс игрока для отслеживания взаимодействия с оружием и интеракцией с объектами
 public class Player : MonoBehaviour
 {
     [SerializeField] private GameObject weapon;
     [SerializeField] private Transform weaponPosition;
     [SerializeField] private Transform cameraTransform;
 
+    // Вооружен игрок или нет
     public bool armed { get; private set; }
     private Gun gun;
     private RaycastInteraction raycast;
@@ -49,6 +49,7 @@ public class Player : MonoBehaviour
 
     }
 
+    // Вооружить игрока
     public void ArmPlayer(GameObject weapon)
     {
         weapon = Instantiate(weapon, weaponPosition);

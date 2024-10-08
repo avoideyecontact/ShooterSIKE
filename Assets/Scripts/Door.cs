@@ -1,7 +1,9 @@
 using UnityEngine;
 
+// Дверь с которой необходимо взаимодействовать
 public class Door : MonoBehaviour, IInteractable
 {
+    // Скорость открытия двери
     public float speed;
     [SerializeField] private float doorRotation;
     [SerializeField] private bool open;
@@ -33,20 +35,19 @@ public class Door : MonoBehaviour, IInteractable
         }
     }
 
+    // Метод открытия двери
     public void Open()
     {
         open = true;
-        //transform.RotateAround(edgePivotPoint.position, Vector3.up, 90);
-        //transform.RotateAround(edgePivotPoint.position, Vector3.up, speed * Time.deltaTime);
     }
 
+    // Метод закрытия двери
     public void Close()
     {
         open = false;
-        //transform.RotateAround(edgePivotPoint.position, Vector3.up, -90);
-        //transform.RotateAround(edgePivotPoint.position, Vector3.up, -speed * Time.deltaTime);
     }
 
+    // Метод взаимодействия с дверью
     public void Interact()
     {
         if (open)

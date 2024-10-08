@@ -1,8 +1,9 @@
 using UnityEngine;
-using UnityEngine.Events;
 
+// Взаимодействие с объектами при помощи raycast
 public class RaycastInteraction : MonoBehaviour
 {
+    // Дальность взаимодействия с объектами
     public float interactionDistance;
 
     [SerializeField] private Transform cameraTransform;
@@ -15,6 +16,7 @@ public class RaycastInteraction : MonoBehaviour
         Gizmos.DrawRay(cameraTransform.position, endPosition - cameraTransform.position);
     }
 
+    // Взаимодействие с объектами при помощи raycast
     public void Raycast()
     {
         RaycastHit hit;

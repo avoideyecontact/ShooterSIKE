@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.Events;
 
+// Класс который запускает событие при коллизии
 public class EnterCollision : MonoBehaviour
 {
     [SerializeField] private new string tag;
@@ -15,6 +16,7 @@ public class EnterCollision : MonoBehaviour
         }
     }
 
+    // Расширение unity event (без него нельзя было бы вызвать делегат у другого объекта)
     [Serializable]
     public class EnterEvent : UnityEvent<GameObject>
     {

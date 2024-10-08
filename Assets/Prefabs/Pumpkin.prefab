@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3677154685980882087}
   - component: {fileID: 6924881154233428628}
   - component: {fileID: 5903977066024406474}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: Pumpkin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,7 +118,7 @@ GameObject:
   - component: {fileID: 7020589506007881276}
   - component: {fileID: 55981779072836770}
   - component: {fileID: 3989684782160763722}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -255,7 +255,7 @@ MonoBehaviour:
   agent: {fileID: 2873344661370658399}
   player: {fileID: 0}
   weaponObject: {fileID: 8965254412738647317}
-  deathParticles: {fileID: 2847147642266919234, guid: 8b7bbc824d9820b419a83dad45c23d5e, type: 3}
+  deathParticles: {fileID: 100010, guid: 031d08f52af1daa4f929b85221519426, type: 3}
   whatIsGround:
     serializedVersion: 2
     m_Bits: 257
@@ -264,8 +264,8 @@ MonoBehaviour:
     m_Bits: 8192
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointSet: 0
-  walkPointRange: 15
-  sightRange: 30
+  walkPointRange: 5
+  sightRange: 40
   attackRange: 15
   timeBetweenAttacks: 1
 --- !u!114 &4978390960427750248

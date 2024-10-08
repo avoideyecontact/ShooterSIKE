@@ -6,6 +6,8 @@ using UnityEngine.Events;
 // —крипт дл€ анимации смерти глав€р€ пришельцев
 public class AlienKingDeath : MonoBehaviour
 {
+    // „астицы смерти
+    public GameObject deathParticles;
     private bool isDying;
     private bool isDead;
     private Health health;
@@ -44,6 +46,8 @@ public class AlienKingDeath : MonoBehaviour
                 if (!isDead)
                 {
                     onDeath?.Invoke();
+                    var particles = Instantiate(deathParticles, transform.position, Quaternion.identity);
+                    Destroy(particles, 5.0f);
                 }
                 isDead = true;
                 isDying = false;

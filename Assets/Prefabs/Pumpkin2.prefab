@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4872225908637798838}
   - component: {fileID: 2785937022221729852}
   - component: {fileID: 4606352500499839323}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: Cylinder (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,7 +117,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6730234809641203590}
   - component: {fileID: 4164175928105690175}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -213,7 +213,7 @@ GameObject:
   - component: {fileID: 3594157513746482174}
   - component: {fileID: 1985272700267129840}
   - component: {fileID: 1797706227310787161}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: Cylinder (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -320,7 +320,7 @@ GameObject:
   - component: {fileID: 4447030342248681557}
   - component: {fileID: 2516733543009841598}
   - component: {fileID: 4390907784715129837}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: Cylinder (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -427,6 +427,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pumpkin2
       objectReference: {fileID: 0}
+    - target: {fileID: 2847147642266919234, guid: 8b7bbc824d9820b419a83dad45c23d5e, type: 3}
+      propertyPath: m_Layer
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 5066439982025418241, guid: 8b7bbc824d9820b419a83dad45c23d5e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -33.00443
@@ -466,6 +470,10 @@ PrefabInstance:
     - target: {fileID: 5066439982025418241, guid: 8b7bbc824d9820b419a83dad45c23d5e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6246264405656094185, guid: 8b7bbc824d9820b419a83dad45c23d5e, type: 3}
+      propertyPath: m_Layer
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 6924881154233428628, guid: 8b7bbc824d9820b419a83dad45c23d5e, type: 3}
       propertyPath: m_CastShadows

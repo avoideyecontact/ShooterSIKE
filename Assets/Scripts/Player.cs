@@ -24,18 +24,6 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        if (armed)
-        {
-            RaycastHit hit;
-            if (Physics.Raycast(cameraTransform.position, cameraTransform.forward, out hit, Mathf.Infinity))
-            {
-                if (hit.collider.CompareTag("Enemy"))
-                {
-                    gun.transform.LookAt(hit.point);
-                }
-            }
-        }
-
         if (Input.GetAxis("Fire") > 0 && gun != null)
         {
             gun.Use();

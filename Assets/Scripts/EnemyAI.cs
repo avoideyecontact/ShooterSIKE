@@ -113,4 +113,11 @@ public class EnemyAI : MonoBehaviour
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, sightRange);
     }
+
+    public void Death()
+    {
+        var score = player.GetComponent<Score>();
+        score.ModifyScore(1);
+        // spawner добавить
+    }
 }

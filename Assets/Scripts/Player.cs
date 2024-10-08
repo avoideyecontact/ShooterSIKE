@@ -29,7 +29,10 @@ public class Player : MonoBehaviour
             RaycastHit hit;
             if (Physics.Raycast(cameraTransform.position, cameraTransform.forward, out hit, Mathf.Infinity))
             {
-                gun.transform.LookAt(hit.point);
+                if (hit.collider.CompareTag("Enemy"))
+                {
+                    gun.transform.LookAt(hit.point);
+                }
             }
         }
 

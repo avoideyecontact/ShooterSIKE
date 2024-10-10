@@ -1339,7 +1339,7 @@ GameObject:
   - component: {fileID: 61039758}
   - component: {fileID: 61039760}
   - component: {fileID: 61039759}
-  m_Layer: 18
+  m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7538,7 +7538,7 @@ GameObject:
   - component: {fileID: 124015585}
   - component: {fileID: 124015588}
   - component: {fileID: 124015587}
-  m_Layer: 18
+  m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7682,7 +7682,7 @@ GameObject:
   m_Component:
   - component: {fileID: 128898053}
   - component: {fileID: 128898052}
-  m_Layer: 18
+  m_Layer: 0
   m_Name: UFO (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7702,7 +7702,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 50
-  amplitude: 0.3
+  amplitude: 0.5
   frequency: 2
 --- !u!4 &128898053
 Transform:
@@ -7713,7 +7713,7 @@ Transform:
   m_GameObject: {fileID: 128898051}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.85, y: 11.61, z: -14.43}
+  m_LocalPosition: {x: -0.77, y: 11.61, z: -18.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8447,7 +8447,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.70710677, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0.055999756, y: 0.29916716, z: -1.6469994}
-  m_LocalScale: {x: 0.49999997, y: 0.49999997, z: 4}
+  m_LocalScale: {x: 0.49999997, y: 0.49999997, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1186061738}
@@ -9284,7 +9284,7 @@ GameObject:
   m_Component:
   - component: {fileID: 191432979}
   - component: {fileID: 191432980}
-  m_Layer: 18
+  m_Layer: 0
   m_Name: UFO
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9819,12 +9819,12 @@ GameObject:
   - component: {fileID: 209809929}
   - component: {fileID: 209809928}
   - component: {fileID: 209809927}
-  m_Layer: 18
+  m_Layer: 0
   m_Name: Leg (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &209809926
 Transform:
@@ -11267,7 +11267,7 @@ GameObject:
   - component: {fileID: 262084138}
   - component: {fileID: 262084137}
   - component: {fileID: 262084136}
-  m_Layer: 18
+  m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14367,7 +14367,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 421846988}
-  m_Layer: 18
+  m_Layer: 0
   m_Name: UFO (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14383,7 +14383,7 @@ Transform:
   m_GameObject: {fileID: 421846987}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -145.5, y: 339, z: 101.5}
+  m_LocalPosition: {x: -131.7, y: 339, z: 101.5}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -17127,7 +17127,7 @@ GameObject:
   - component: {fileID: 578231624}
   - component: {fileID: 578231626}
   - component: {fileID: 578231625}
-  m_Layer: 18
+  m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17371,7 +17371,7 @@ GameObject:
   - component: {fileID: 585695024}
   - component: {fileID: 585695027}
   - component: {fileID: 585695026}
-  m_Layer: 18
+  m_Layer: 0
   m_Name: Sphere (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17455,7 +17455,7 @@ GameObject:
   - component: {fileID: 590145020}
   - component: {fileID: 590145019}
   - component: {fileID: 590145018}
-  m_Layer: 18
+  m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20594,7 +20594,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.70710677, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0.055999756, y: 0.29916716, z: 1.8530006}
-  m_LocalScale: {x: 0.49999997, y: 0.49999997, z: 4}
+  m_LocalScale: {x: 0.49999997, y: 0.49999997, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1186061738}
@@ -21573,7 +21573,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 813454252}
-  m_Layer: 18
+  m_Layer: 0
   m_Name: UFO (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21589,7 +21589,7 @@ Transform:
   m_GameObject: {fileID: 813454251}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 339, z: 0}
+  m_LocalPosition: {x: 31.2, y: 339, z: 0}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -22727,12 +22727,12 @@ GameObject:
   - component: {fileID: 855665906}
   - component: {fileID: 855665905}
   - component: {fileID: 855665904}
-  m_Layer: 18
+  m_Layer: 0
   m_Name: Leg (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &855665903
 Transform:
@@ -27374,7 +27374,7 @@ GameObject:
   - component: {fileID: 1059780744}
   - component: {fileID: 1059780746}
   - component: {fileID: 1059780745}
-  m_Layer: 18
+  m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32491,7 +32491,7 @@ GameObject:
   - component: {fileID: 1268063820}
   - component: {fileID: 1268063819}
   - component: {fileID: 1268063818}
-  m_Layer: 18
+  m_Layer: 0
   m_Name: Sphere (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35691,7 +35691,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1426439807}
-  m_Layer: 18
+  m_Layer: 0
   m_Name: UFO (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35707,7 +35707,7 @@ Transform:
   m_GameObject: {fileID: 1426439806}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -167, y: 339, z: -88.7}
+  m_LocalPosition: {x: -133.1, y: 339, z: -88.7}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -36389,12 +36389,12 @@ GameObject:
   - component: {fileID: 1449921757}
   - component: {fileID: 1449921756}
   - component: {fileID: 1449921755}
-  m_Layer: 18
+  m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1449921754
 Transform:
@@ -36927,6 +36927,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pumpkin2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6158863650502216943, guid: cbd0821e6112046429af11999f995d27, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -37286,7 +37290,7 @@ GameObject:
   - component: {fileID: 1472668541}
   - component: {fileID: 1472668543}
   - component: {fileID: 1472668542}
-  m_Layer: 18
+  m_Layer: 0
   m_Name: Sphere (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38204,12 +38208,12 @@ GameObject:
   - component: {fileID: 1517221654}
   - component: {fileID: 1517221653}
   - component: {fileID: 1517221652}
-  m_Layer: 18
+  m_Layer: 0
   m_Name: Leg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1517221651
 Transform:
@@ -39747,7 +39751,7 @@ GameObject:
   - component: {fileID: 1607932322}
   - component: {fileID: 1607932324}
   - component: {fileID: 1607932323}
-  m_Layer: 18
+  m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40354,7 +40358,7 @@ GameObject:
   - component: {fileID: 1630174175}
   - component: {fileID: 1630174177}
   - component: {fileID: 1630174176}
-  m_Layer: 18
+  m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41377,7 +41381,7 @@ GameObject:
   - component: {fileID: 1676059623}
   - component: {fileID: 1676059626}
   - component: {fileID: 1676059625}
-  m_Layer: 18
+  m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41693,12 +41697,12 @@ GameObject:
   - component: {fileID: 1685081062}
   - component: {fileID: 1685081065}
   - component: {fileID: 1685081066}
-  m_Layer: 18
+  m_Layer: 0
   m_Name: Teleport
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1685081061
 Transform:
@@ -43404,7 +43408,7 @@ GameObject:
   - component: {fileID: 1767289440}
   - component: {fileID: 1767289439}
   - component: {fileID: 1767289438}
-  m_Layer: 18
+  m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45194,7 +45198,7 @@ GameObject:
   - component: {fileID: 1838250823}
   - component: {fileID: 1838250825}
   - component: {fileID: 1838250824}
-  m_Layer: 18
+  m_Layer: 0
   m_Name: Sphere (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45913,7 +45917,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 127
   m_IsActive: 1
 --- !u!4 &1864271844
 Transform:
@@ -46308,12 +46312,12 @@ GameObject:
   - component: {fileID: 1879769849}
   - component: {fileID: 1879769848}
   - component: {fileID: 1879769847}
-  m_Layer: 18
+  m_Layer: 0
   m_Name: Sphere (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1879769846
 Transform:
@@ -47350,7 +47354,7 @@ GameObject:
   - component: {fileID: 1894056458}
   - component: {fileID: 1894056460}
   - component: {fileID: 1894056459}
-  m_Layer: 18
+  m_Layer: 0
   m_Name: Sphere (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48388,7 +48392,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1942663549}
-  m_Layer: 18
+  m_Layer: 0
   m_Name: UFO_enter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49308,7 +49312,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1995263745}
-  m_Layer: 18
+  m_Layer: 0
   m_Name: Legs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49632,7 +49636,7 @@ GameObject:
   - component: {fileID: 2007682721}
   - component: {fileID: 2007682723}
   - component: {fileID: 2007682722}
-  m_Layer: 18
+  m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49999,7 +50003,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2034799029}
-  m_Layer: 18
+  m_Layer: 0
   m_Name: UFO
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51241,12 +51245,12 @@ GameObject:
   m_Component:
   - component: {fileID: 2079661156}
   - component: {fileID: 2079661157}
-  m_Layer: 18
+  m_Layer: 0
   m_Name: Spot Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2079661156
 Transform:

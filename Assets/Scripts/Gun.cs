@@ -19,12 +19,12 @@ public class Gun : MonoBehaviour, Weapon
     [SerializeField] private Transform gunBarrelPosition;
 
     // Использовать оружие (произвести выстрел)
-    public void Use()
+    public void Use(string owner)
     {
         if (fireAllowed)
         {
             var bullet = Instantiate(bulletPrefab, gunBarrelPosition.position, transform.parent.rotation);
-            bullet.GetComponent<Rigidbody>();
+            bullet.GetComponent<Bullet>().owner = owner;
             bullet.GetComponent<Rigidbody>().AddForce(transform.forward * firePower, ForceMode.Impulse);
             Destroy(bullet, bulletLifespan);
 

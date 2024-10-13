@@ -47096,6 +47096,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 964a01ef3c19c5f42b505dea40eef78f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  creatureName: Player
   weapon: {fileID: 0}
   weaponPosition: {fileID: 1420263349}
   cameraTransform: {fileID: 963194228}
@@ -52545,6 +52546,7 @@ GameObject:
   - component: {fileID: 2141427063}
   - component: {fileID: 2141427064}
   - component: {fileID: 2141427065}
+  - component: {fileID: 2141427066}
   m_Layer: 16
   m_Name: Alienking
   m_TagString: Enemy
@@ -52631,6 +52633,19 @@ CapsuleCollider:
   m_Height: 9.04599
   m_Direction: 1
   m_Center: {x: 0, y: 1.269455, z: 0.052836537}
+--- !u!114 &2141427066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141427062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d5165718af778442a545e804aa7f854, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  creatureName: AlienKing
 --- !u!1001 &2145931586
 PrefabInstance:
   m_ObjectHideFlags: 0

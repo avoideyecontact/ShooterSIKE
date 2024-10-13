@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.AI;
 
 // Класс поведение ботов
-public class EnemyAI : MonoBehaviour
+public class EnemyAI : Creature
 {
     // NavMeshAgent
     public NavMeshAgent agent;
@@ -44,6 +44,7 @@ public class EnemyAI : MonoBehaviour
 
     private void Start()
     {
+        creatureName = "Bot";
         player = GameObject.Find("Player").transform;
         agent = GetComponent<NavMeshAgent>();
         weapon = weaponObject.GetComponent<Weapon>();
@@ -97,7 +98,7 @@ public class EnemyAI : MonoBehaviour
 
         if (!alredyAttacked)
         {
-            weapon.Use();
+            weapon.Use(creatureName);
 
             alredyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);

@@ -1,7 +1,7 @@
 using UnityEngine;
 
 // Класс игрока для отслеживания взаимодействия с оружием и интеракцией с объектами
-public class Player : MonoBehaviour
+public class Player : Creature
 {
     [SerializeField] private GameObject weapon;
     [SerializeField] private Transform weaponPosition;
@@ -26,7 +26,7 @@ public class Player : MonoBehaviour
     {
         if (Input.GetAxis("Fire") > 0 && gun != null)
         {
-            gun.Use();
+            gun.Use(creatureName);
         }
 
 

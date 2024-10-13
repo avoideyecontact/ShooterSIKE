@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6895905409939219536}
   - component: {fileID: 32148087103614961}
   - component: {fileID: 1592718234790061052}
-  - component: {fileID: 5955187177622668781}
+  - component: {fileID: 1018262831431591825}
   m_Layer: 0
   m_Name: Leaves
   m_TagString: Untagged
@@ -84,8 +84,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &5955187177622668781
-SphereCollider:
+--- !u!136 &1018262831431591825
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -102,8 +102,10 @@ SphereCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
+  serializedVersion: 2
+  m_Radius: 0.45
+  m_Height: 1
+  m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2974845519793069913
 GameObject:

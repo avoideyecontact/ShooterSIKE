@@ -13,11 +13,10 @@ GameObject:
   - component: {fileID: 1899757005749619191}
   - component: {fileID: 7268822673880984467}
   - component: {fileID: 3711251111223865102}
-  - component: {fileID: 954126992383711704}
   - component: {fileID: -3219311835540983135}
   - component: {fileID: 5905326082360636396}
   - component: {fileID: 605699953116977217}
-  m_Layer: 16
+  m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +101,7 @@ SphereCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 65536
+    m_Bits: 0
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -137,46 +136,6 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 1
---- !u!114 &954126992383711704
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2093271020451803572}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a8b7d50163f42d44a8b807bd9a3d8f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tag: Player
-  action:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 5905326082360636396}
-        m_TargetAssemblyTypeName: HealthModifier, Assembly-CSharp
-        m_MethodName: Apply
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 605699953116977217}
-        m_TargetAssemblyTypeName: DestroyObject, Assembly-CSharp
-        m_MethodName: Destroy
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &-3219311835540983135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,7 +148,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a8b7d50163f42d44a8b807bd9a3d8f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tag: Enemy
+  tag: 
+  noTag: 1
   action:
     m_PersistentCalls:
       m_Calls:

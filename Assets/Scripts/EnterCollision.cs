@@ -10,10 +10,9 @@ public class EnterCollision : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.CompareTag(tag))
-        {
+        if (tag == "" || other.gameObject.CompareTag(tag))
             action?.Invoke(other.gameObject);
-        }
+
     }
 
     // Расширение unity event (без него нельзя было бы вызвать делегат у другого объекта)

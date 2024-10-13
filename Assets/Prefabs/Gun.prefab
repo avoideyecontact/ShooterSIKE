@@ -249,7 +249,7 @@ MonoBehaviour:
   firePower: 20
   fireAllowed: 1
   bulletLifespan: 5
-  bulletPrefab: {fileID: 2093271020451803572, guid: b07be196615cb024394f5464fdb3c9ed, type: 3}
+  bulletPrefab: {fileID: 2093271020451803572, guid: 4339342476447b54b989978064fc16ed, type: 3}
   gunBarrelPosition: {fileID: 3765657617908609781}
 --- !u!1 &8466324987666188666
 GameObject:
